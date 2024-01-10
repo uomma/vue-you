@@ -5,9 +5,9 @@
 </script>
 
 <template>
-    <div>
-        piede
-    </div>
+   <footer class="text-center my-5">
+    risultati trovati : numero
+   </footer>
 </template>
 
 
