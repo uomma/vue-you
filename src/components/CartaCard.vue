@@ -6,8 +6,11 @@
 </script>
 
 <template>
-    <div>
-        carta
+    <div class="card text-center">
+        <div class="img"><img class="img-fluid "></div>
+        <h3>nome carta</h3>
+        <p>tipo</p>
+
 
     </div>
 </template>
