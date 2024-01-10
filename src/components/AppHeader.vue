@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div>
-        <h1 class="text-center">testa</h1>
+        <h1 class="text-center">Yu-Ghi-Yo!</h1>
        
     </div>
 </template>

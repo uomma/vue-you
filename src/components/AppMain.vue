@@ -1,13 +1,18 @@
 <script>
+import CarteSearch from './CarteSearch.vue';
     export default {
-        name:'AppMain'
+        name:'AppMain',
+
+        components: {
+            CarteSearch
+        }
     }
 </script>
 
 <template>
-    <div>
-        core
-    </div>
+<main>
+    <CarteSearch></CarteSearch>
+</main>
 </template>
 
 
