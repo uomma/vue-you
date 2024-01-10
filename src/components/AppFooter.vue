@@ -1,12 +1,19 @@
 <script>
+
+import { store } from '../store';
     export default {
-        name:'AppFooter'
+        name:'AppFooter',
+        data(){
+            return{
+                store
+            }
+        }
     }
 </script>
 
 <template>
    <footer class="text-center my-5">
-    risultati trovati : numero
+    risultati trovati : {{store.cardsFound }}
    </footer>
 </template>
 
