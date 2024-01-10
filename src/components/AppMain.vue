@@ -1,11 +1,12 @@
 <script>
-export default {
-   name: 'hello'
-}
+    export default {
+        name:'AppMain'
+    }
 </script>
+
 <template>
     <div>
-        <h1>hello</h1>
+        core
     </div>
 </template>
 
