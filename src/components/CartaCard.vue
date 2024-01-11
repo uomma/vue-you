@@ -13,13 +13,16 @@ export default {
 </script>
 
 <template>
-    <div class="card text-center">
+    <div class="row col-12">
+        <div class="card text-center col">
         <div class="img"><img class="img-fluid" :src="img"></div>
         <h3>{{ name }} </h3>
         <p>{{ type }}</p>
 
 
     </div>
+    </div>
+    
 </template>
 
 
