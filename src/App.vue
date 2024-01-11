@@ -10,33 +10,41 @@ export default {
   name: 'App',
   components: {
     AppHeader,
-    AppMain,  
+    AppMain,
     AppFooter
-  },  
-   data() {
-        return {
-            store,
-           
-        }
+  },
+  data() {
+    return {
+      store,
+
+    }
+  },
+  methods: {
+    nuovoEvent() {
+      console.log('sono app')
     },
-    created() {
-    axios.get(' https://db.ygoprodeck.com/api/v7/cardinfo.php')
+    search(){
+      axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php', {
+      })
       .then((response) => {
         console.log(response);
         this.store.cards = response.data.data;
         this.store.cardsFound = response.data.data.length;
 
       })
-
+    }
+  },
+  created() {
+   this.search()
   }
- 
+
 
 }
 </script>
 
 <template>
   <AppHeader />
-  <AppMain />
+  <AppMain @algo="search " />
   <AppFooter />
 </template>
 

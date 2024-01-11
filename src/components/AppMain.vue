@@ -7,13 +7,20 @@ import CardList from './CardList.vue';
         components: {
             CarteSearch,
             CardList,
+        },
+        methods:{
+            handleSearch(){
+                console.log('ho ascoltato')
+                this.$emit('algo')
+            }
         }
+
     }
 </script>
 
 <template>
 <main>
-    <CarteSearch></CarteSearch>
+    <CarteSearch @search="handleSearch" ></CarteSearch>
     <CardList></CardList>
 </main>
 </template>
